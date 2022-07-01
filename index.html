@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Bienvenido al ahorcado</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <script type="text/javascript" src="ahorcado.js"></script>
+</head>
+
+<body>
+  <div id="tablero">
+    <div id="izquierda">
+      <div id="palabra"><div id="palabraOculta"></div></div>
+      <div id="teclado">
+        <button id="a" class="letra" onclick="comprobarLetra('a')">A</button>
+        <button id="b" class="letra" onclick="comprobarLetra('b')">B</button>
+        <button id="c" class="letra" onclick="comprobarLetra('c')">C</button>
+        <button id="d" class="letra" onclick="comprobarLetra('d')">D</button>
+        <button id="e" class="letra" onclick="comprobarLetra('e')">E</button>
+        <button id="f" class="letra" onclick="comprobarLetra('f')">F</button>
+        <button id="g" class="letra" onclick="comprobarLetra('g')">G</button>
+        <button id="h" class="letra" onclick="comprobarLetra('h')">H</button>
+        <button id="i" class="letra" onclick="comprobarLetra('i')">I</button>
+        <button id="j" class="letra" onclick="comprobarLetra('j')">J</button>
+        <button id="k" class="letra" onclick="comprobarLetra('k')">K</button>
+        <button id="l" class="letra" onclick="comprobarLetra('l')">L</button>
+        <button id="m" class="letra" onclick="comprobarLetra('m')">M</button>
+        <button id="n" class="letra" onclick="comprobarLetra('n')">N</button>
+        <button id="ñ" class="letra" onclick="comprobarLetra('ñ')">Ñ</button>
+        <button id="o" class="letra" onclick="comprobarLetra('o')">O</button>
+        <button id="p" class="letra" onclick="comprobarLetra('p')">P</button>
+        <button id="q" class="letra" onclick="comprobarLetra('q')">Q</button>
+        <button id="r" class="letra" onclick="comprobarLetra('r')">R</button>
+        <button id="s" class="letra" onclick="comprobarLetra('s')">S</button>
+        <button id="t" class="letra" onclick="comprobarLetra('t')">T</button>
+        <button id="u" class="letra" onclick="comprobarLetra('u')">U</button>
+        <button id="v" class="letra" onclick="comprobarLetra('v')">V</button>
+        <button id="w" class="letra" onclick="comprobarLetra('w')">W</button>
+        <button id="x" class="letra" onclick="comprobarLetra('x')">X</button>
+        <button id="y" class="letra" onclick="comprobarLetra('y')">Y</button>
+        <button id="z" class="letra" onclick="comprobarLetra('z')">Z</button>
+      </div>
+    </div>
+    <div id="derecha">
+      <div id="wanted">
+      </div>
+    </div>
+    <div id="resultado">
+      <div id="felicitacion">¡ENHORABUENA!<br> HAS GANADO</div>
+    </div>
+  </div>
+</body>
+</html>
