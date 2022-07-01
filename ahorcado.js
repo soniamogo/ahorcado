@@ -3,7 +3,18 @@ var eleccion = '';
 var estadoEleccion = [];
 var vidas = -1;
 var imagenes = ['url(img/0.png)','url(img/1.png)', 'url(img/2.png)', 'url(img/3.png)', 'url(img/4.png)', 'url(img/5.png)', 'url(img/6.png)', 'url(img/7.png)', 'url(img/8.png)', 'url(img/9.png)'];
+var letras = ["a", "b", "c", "d"]
 
+$(document).ready(function(){
+  letras.forEach(letra =>{
+    $("#teclado").append(`<button id="${letra}" class="letra">${letra}</button>`)
+  })
+  $(".letra").click(function(){
+    const valor=$(this).text();
+    comprobarLetra(valor);
+    desactivarLetra(valor);
+  })
+})
 function seleccionPalabra(){
   var aleatorio = Math.floor(Math.random()*palabras.length);
   eleccion = palabras[aleatorio].toLowerCase();
@@ -39,7 +50,7 @@ console.log(vidas);
   document.getElementById("felicitacion").innerText='LO SIENTO, HAS PERDIDO';
   finalPartida();
  }
- desactivarLetra(letra);
+//  desactivarLetra(letra);
 }
 
 function desactivarLetra(letra){
