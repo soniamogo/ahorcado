@@ -1,4 +1,4 @@
-var palabras = ['Aprendizaje','Secreto','Besar','Maldito','Llave','Situacion','Prescindible','Cuidar','Horroroso','Profetico','Evitar','Inflamable','Jarra','Humano','Botella','Marco','Dosis','Balistica','Celebridad','Furioso','Paciente','Prefabricado','Subasta','Placido','Instrumento','Entero','Desgarrador','Buscar','Polvo','Amputacion','Venir','Pareja','Rosa','Pinzon','Disfuncional','Robin','Acero','Puro','Rancio','Tembloroso','Inteligente','Empujar','Bear','Experimento','Plegable','Infantil','Soplar','Identico','Cercana','Arandano','Pasear','Repartir','Cauteloso','Dolorido','Profuso','Bateria','Diversion','Juego','Retener','Contenedor','Evocar','Retorcer','Reminiscente','Abandonado','Propaganda','Gestion','Estres','Inmolar','optimo','Cultural','Ingenioso','Infundir','Hervir','Astuto','Desertor','Camello','Pudrirse','Mutageno','Pegajoso','Analisis','Sollozar','Precioso','Ahogado','Infierno','Decimo','Caida','Educar','Adicto','Hija','Ver','Rosa','Axiomatico','Vomitar','Dudoso','Arrullo','Asociacion','Agradecer','Federacion','Galan','Desorientacion','Humedo','Reunion','Mejor','Absurdos','Fondo','Encontrar','Manzana','Encajar','Absorbible','Gobernar','Efusivo','Espiritual','Herida','Clasificar','Cordon','Cientifico','Ingenieria'];
+var palabras = ['Aprendizaje','Secreto','Besar','Maldito','Llave','Situacion','Prescindible','Cuidar','Horroroso','Profetico','Evitar','Inflamable','Jarra','Humano','Botella','Marco','Dosis','Balistica','Celebridad','Furioso','Paciente','Prefabricado','Subasta','Placido','Instrumento','Entero','Desgarrador','Buscar','Polvo','Amputacion','Venir','Pareja','Rosa','Pinzon','Disfuncional','Robin','Acero','Puro','Rancio','Tembloroso','Inteligente','Empujar','Bear','Experimento','Plegable','Infantil','Soplar','Identico','Cercana','Arandano','Pasear','Repartir','Cauteloso','Dolorido','Profuso','Bateria','Diversion','Juego','Retener','Contenedor','Evocar','Retorcer','Reminiscente','Abandonado','Propaganda','Gestion','Estres','Inmolar','optimo','Cultural','Ingenioso','Infundir','Hervir','Astuto','Desertor','Camello','Pudrirse','Mutageno','Pegajoso','Analisis','Sollozar','Precioso','Ahogado','Infierno','Decimo','Caida','Educar','Adicto','Hija','Ver','Rosa','Axiomatico','Vomitar','Dudoso','Arrullo','Asociacion','Agradecer','Federacion','Galan','Desorientacion','Humedo','Reunion','Mejor','Absurdos','Fondo','Encontrar','Manzana','Encajar','Absorbible','Gobernar','Efusivo','Espiritual','Herida','Clasificar','Cordon','Cientifico','Ingenieria', 'Largo', 'Integral', 'Zona', 'Religion', 'Indio', 'Manteca', 'Bolsillo', 'Urna', 'Grano'];
 var eleccion = '';
 var estadoEleccion = [];
 var vidas = -1;
@@ -32,20 +32,19 @@ function comprobarLetra(letra){
     document.getElementById("wanted").style.backgroundImage=imagenes[vidas];
   }
 console.log(vidas);
- if(estadoEleccion.join("") === eleccion){
-   finalPartida();
- }
- if(vidas === 9){
+  if(estadoEleccion.join("") === eleccion){
+    finalPartida();
+  }
+  if(vidas === 9){
   document.getElementById("felicitacion").innerText='LO SIENTO, HAS PERDIDO';
-  finalPartida();
- }
- desactivarLetra(letra);
+    finalPartida();
+  }
+  desactivarLetra(letra);
 }
 
 function desactivarLetra(letra){
- var anular = document.getElementById(letra);
- anular.setAttribute('disabled', '');
- 
+  var anular = document.getElementById(letra);
+  anular.setAttribute('disabled', '');
 }
 
 function finalPartida(){
